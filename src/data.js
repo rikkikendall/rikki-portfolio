@@ -1,23 +1,25 @@
 
+
 export const CVData = {
     personalData: {
       name: 'Rikki Kendall',
       title: 'Software Developer',
-      image: 'https://bulma.io/images/placeholders/128x128.png',
+      // image: 'https://bulma.io/images/placeholders/128x128.png',
+      image: 'https://media-exp1.licdn.com/dms/image/C4E03AQFBztb7_tQF5w/profile-displayphoto-shrink_200_200/0?e=1599091200&v=beta&t=rQPnnYPi5O_0sPy7D7U-VGbY7SnCl9AHOBnJbINOc2c',
       contacts: [
         { type: 'email', value: 'kendall.rikki@gmail.com' },
-        { type: 'phone', value: '+1 559-326-6408' },
+        { type: 'phone', value: '+1(559)326-6408' },
         { type: 'location', value: 'Orlando, FL' },
-        { type: 'website', value: 'example.com' },
-        { type: 'linkedin', value: 'linkedin.com/in/rikkikendall' },
-        { type: 'github', value: 'github.com/404' }
+        { type: 'website', value: 'rikkikendall.me' },
+        { type: 'linkedin', value: 'linkedin.com/in/rikki-kendall' },
+        { type: 'github', value: 'github.com/rikkikendall' }
       ]
     },
     sections: [
       {
         type: 'text',
         title: 'Career Profile',
-        content: '',
+        content: 'My full name is Yuuta Rikki Kendall and I am a software developer and recent Duke Computer Science grad from Sasebo, Japan. I have strong ambitions to grow through challenging myself with new projects and ideas every day',
         icon: 'usertie'
       },
       {
@@ -42,33 +44,32 @@ export const CVData = {
       {
         type: 'experiences-list',
         title: 'Experiences',
-        description: 'Optional',
         icon: 'archive',
         items: [
           {
-            title: 'Lead Software Developer',
-            company: 'GTHC',
-            description: 'I\'m working as a lead developer yeeeey!',
-            companyWebSite: 'http://www.gthc.io',
+            title: 'Junior Dev Ops Intern',
+            company: 'WearWorks',
+            description: 'Facilitated the development of a MySQL Database and helped transition the relational database to Amazon RDS as well as implementing the Entity/Relationship Diagram for the MySQL Database',
+            companyWebSite: 'http://www.wear.works.com',
             companyMeta: '',
-            datesBetween: '2017.10 - Present',
-            descriptionTags: ['Javascript', 'React']
+            datesBetween: '2020.06 - Present',
+            descriptionTags: ['MySQL', 'AWS']
           },
           {
-            title: 'Software Developer',
-            company: 'Some Company Example INC',
-            description: 'I\'m using ReactJS and working as a front-end developer',
+            title: 'Technical Analyst Intern',
+            company: 'Office of Naval Intelligence - Suitland, MD',
+            description: 'Analyzed scientific intelligence for the Farragut Technical Analysis Center',
             companyWebSite: 'http://somecompanyexample.com',
-            companyMeta: 'Little info about company',
-            datesBetween: '2016.8 - 2017.10'
+            datesBetween: '2019.02 - 2019.08',
+            descriptionTags: ['Intelligence', 'Technical Analysis']
           },
           {
-            title: 'Intern',
-            company: 'Some Software Example INC',
-            description: 'I was warming up.',
+            title: 'Web Developer/Mobile Developer',
+            company: 'Game Tenting Help Center (GTHC) - Durham, NC',
+            description: 'Web Developer/Mobile Developer',
             companyWebSite: 'http://someexamplecompany.com',
-            companyMeta: 'SF USA',
-            datesBetween: '2012.06 - 2012.10'
+            datesBetween: '2012.06 - 2012.10',
+            descriptionTags: ['React', 'React Native', 'Redux', 'Ruby on Rails']
           }
         ]
       },
@@ -79,38 +80,28 @@ export const CVData = {
         icon: 'tasks',
         groups: [
           {
-            sectionHeader: 'Company Name',
+            sectionHeader: 'Duke University Projects',
             description: 'Optional',
             items: [
-              { title: 'Project', projectUrl: 'optional', description: 'Optional' },
-              { title: 'Project', projectUrl: 'optional', description: 'Optional' },
-              { title: 'Project', projectUrl: 'optional', description: 'Optional' }
+              { title: 'Game Tenting Help Center', 
+              projectUrl: 'www.gthc.io/aboutus', 
+              description: 'Pioneered a Duke Krzyzewskiville-Ville Scheduling Application used by students to facilitate tenting.' },
+              { title: 'Athlete Brand Network', projectUrl: 'https://master.d2cf12kbv8b7ue.amplifyapp.com/athletes', description: 'Platform to connect NCAA athletes with local businesses for mutual benefit in the form of marketing and sponsorships.' },
             ]
           }
         ]
       },
       {
         type: 'common-list',
-        title: 'Conferences & Certificates',
+        title: 'Conferences',
         description: '',
         icon: 'comments',
         items: [
           {
-            title: 'Some Conferences / 2019',
-            authority: 'SomeConf',
-            authorityWebSite: 'https://www.someconf.somesome'
+            title: 'Engineers in Action / 2019',
+            authority: 'Bridge Builder Conference - CU Boulder',
+            authorityWebSite: 'https://www.engineersinaction.com'
           },
-          {
-            title: 'Some Conferences / 2019',
-            authority: 'SomeConf',
-            authorityMeta: 'Speaker',
-            authorityWebSite: 'https://www.someconf.somesome',
-            rightSide: 'test'
-          },
-          {
-            title: 'Some Conferences / 2012',
-            authorityMeta: 'Speaker'
-          }
         ]
       },
       {
@@ -120,11 +111,11 @@ export const CVData = {
         items: [
           {
             authority: 'English',
-            authorityMeta: 'Professional'
+            authorityMeta: 'Native'
           },
           {
-            authority: 'Spanish',
-            authorityMeta: 'Beginner'
+            authority: 'Japanese',
+            authorityMeta: 'Native'
           }
         ]
       },
@@ -132,13 +123,13 @@ export const CVData = {
         type: 'tag-list',
         title: 'Skills Proficiency',
         icon: 'rocket',
-        items: ['React', 'Javascript', 'CSS', 'SQL', 'SomeTech', 'CoolTech']
+        items: ['React', 'Javascript', 'CSS', 'MySQL', 'Firebase', 'Mongo DB', 'Java']
       },
       {
         type: 'tag-list',
         title: 'Hobbies & Interests',
         icon: 'cubes',
-        items: ['Photography', 'Poetry']
+        items: ['Surfing', 'Basketball', 'Tennis']
       }
     ]
   }
